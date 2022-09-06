@@ -1,21 +1,23 @@
+//
+// Created by willi on 9/5/2022.
+// Question 3 Assignment 1
+//
 #include <iostream>
 
-using namespace std; 
+using namespace std;
 
 int main() {
-
-const int acc = 32; 
-int t; 
-int distance; 
-
-cout << "Enter a time in seconds: "<< endl; 
-
-cin>> t; 
-
-distance = (acc/2) * (t*t);
-
-cout<< ""<< t << "will fall in" << distance << "feet"; 
-
-return 0; 
+   int maxCapacity,numOfPeople,diff;
+   cout <<"Enter the Maximum Occupancy for the room.";
+   cin >>maxCapacity;
+   cout <<"Enter the number of occupants in the room.";
+   cin >>numOfPeople;
+   diff = maxCapacity-numOfPeople;
+   if(numOfPeople<=maxCapacity){
+       cout <<"It is legal to hold the meeting, and you have room for " <<diff <<" more people.";
+   }
+   else{
+       cout<<"The meeting cannot be held due to fire regulations. " <<diff*-1 << " people need to leave.";
+   }
+   return 0;
 }
-
