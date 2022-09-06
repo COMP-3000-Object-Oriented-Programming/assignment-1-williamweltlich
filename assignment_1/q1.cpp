@@ -10,7 +10,7 @@ int main() {
     int num;
     cout <<"Enter a number\n";
     cin>>num;
-    cout <<"The result is: " <<num*num;
+    cout <<num*num;
     return 0;
 }
 
